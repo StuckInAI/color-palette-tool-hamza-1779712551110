@@ -102,7 +102,7 @@ export const cars: Car[] = [
     image: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80',
     badge: 'Exotic',
     features: ['ANIMA Selector', 'Torque Vectoring', 'Carbon Ceramic Brakes', 'Bang & Olufsen Sound', 'Night Vision Assist'],
-    description: 'The Lamborghini Urus S is the world's first Super Sport Utility Vehicle. It embodies the Lamborghini DNA in a versatile form, delivering unprecedented performance.',
+    description: "The Lamborghini Urus S is the world's first Super Sport Utility Vehicle. It embodies the Lamborghini DNA in a versatile form, delivering unprecedented performance.",
     acceleration: '3.5s 0-60mph',
     topSpeed: '190 mph',
     horsepower: 666,
