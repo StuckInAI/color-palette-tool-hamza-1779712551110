@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #6c63ff;
+  --color-brand-dark: #5a52d5;
+  --color-brand-light: #8b85ff;
+  --color-surface: #0f0f1a;
+  --color-surface-2: #1a1a2e;
+  --color-surface-3: #16213e;
+  --color-accent: #ff6584;
+  --color-accent-2: #43e97b;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0f1a;
+  color: #e2e8f0;
+  font-family: 'Inter', system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #6c63ff 0%, #ff6584 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #6c63ff 0%, #ff6584 100%);
+}
+
+.card-glow {
+  box-shadow: 0 0 30px rgba(108, 99, 255, 0.15);
+}
+
+.hero-glow {
+  background: radial-gradient(ellipse at 50% 0%, rgba(108, 99, 255, 0.25) 0%, transparent 70%);
+}
+
+.filter-chip-active {
+  background: linear-gradient(135deg, #6c63ff 0%, #8b85ff 100%);
+  border-color: #6c63ff;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(108, 99, 255, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(108, 99, 255, 0.6); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
