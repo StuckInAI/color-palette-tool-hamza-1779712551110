@@ -61,6 +61,18 @@ export default function Navbar() {
               <Zap size={15} />
               AI Match
             </Link>
+
+            {/* Avatar */}
+            <div className="relative group cursor-pointer">
+              <div className="w-9 h-9 rounded-full overflow-hidden ring-2 ring-purple-500/50 group-hover:ring-purple-400 transition-all">
+                <img
+                  src="https://sopprkucealncmlipghn.supabase.co/storage/v1/object/public/prompt-images/build-images/1779712767957-12952005304.png"
+                  alt="User Avatar"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-400 rounded-full border-2 border-[#0f0f1a]"></span>
+            </div>
           </div>
 
           {/* Mobile toggle */}
@@ -75,6 +87,24 @@ export default function Navbar() {
         {/* Mobile menu */}
         {open && (
           <div className="md:hidden pb-4 space-y-2">
+            {/* Mobile Avatar */}
+            <div className="flex items-center gap-3 px-4 py-3 mb-2 border-b border-white/10">
+              <div className="relative">
+                <div className="w-10 h-10 rounded-full overflow-hidden ring-2 ring-purple-500/50">
+                  <img
+                    src="https://sopprkucealncmlipghn.supabase.co/storage/v1/object/public/prompt-images/build-images/1779712767957-12952005304.png"
+                    alt="User Avatar"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-400 rounded-full border-2 border-[#0f0f1a]"></span>
+              </div>
+              <div>
+                <p className="text-sm font-medium text-white">My Profile</p>
+                <p className="text-xs text-green-400">● Online</p>
+              </div>
+            </div>
+
             {links.map((l) => (
               <Link
                 key={l.to}
